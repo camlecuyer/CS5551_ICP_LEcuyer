@@ -119,7 +119,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Address address = addresses.get(0);
 
             LatLng curPos = new LatLng(address.getLatitude(), address.getLongitude());
-            mMap.addMarker(new MarkerOptions().position(curPos).title("Current Location"));
+            mMap.addMarker(new MarkerOptions().position(curPos).title(address.getAddressLine(0).toString()));
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(curPos, 15));
         }
     }
