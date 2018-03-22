@@ -1,5 +1,3 @@
-/**
- * Created by Marmik on 04/10/2016.*/
 var url = require('url');
 var cors = require('cors');
 var express = require('express');
@@ -37,13 +35,13 @@ app.post('/api/*', function (req, res) {
        }
 
        body = JSON.parse(body);
-       var ven = body.text;
-      ven = JSON.stringify(body.result.products[0]);
+
+       var ven = JSON.stringify(body.result.products[0]);
        res.send(ven);
    });
 });
 
 app.listen(port, function() {
     console.log('app running')
-})
+});
 console.log('Client Server running at http://127.0.0.1:8080/');

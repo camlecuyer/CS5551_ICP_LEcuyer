@@ -13,7 +13,7 @@
         .menu input{
       width: 300px;
       background: transparent;
-      border: 2px solid #1ab188;
+      border: 2px solid #1ab1FF;
       border-radius: 4px;
       color: #5e5e5e;
       font-family: 'Exo', sans-serif;
@@ -25,61 +25,17 @@
     .menu button{
         width: 419px;
         height:40px;
-        background:#1ab188;
-        border:  2px solid #ffffff;
+        background:#1ab1FF;
+        border:  2px solid #000000;
         cursor: pointer;
         border-radius: 4px;
-        color: #ffffff;
+        color: #000000;
         font-family: 'Exo', sans-serif;
         font-size: 16px;
         font-weight: 600;
         padding: 6px;
         margin-top: 10px;
     }
-        table {
-            max-width: 960px;
-            margin: 10px auto;
-            border: 1px solid #FFF;
-        }
-
-        caption {
-            font-size: 1.6em;
-            font-weight: 400;
-            padding: 10px 0;
-        }
-
-        thead th {
-            font-weight: 400;
-            background: #8a97a0;
-            color: #FFF;
-        }
-
-        tr {
-            background: #f4f7f8;
-            border: 1px solid #FFF;
-            margin-bottom: 5px;
-        }
-
-        tr:nth-child(even) {
-            background: #e8eeef;
-        }
-
-        th, td {
-            text-align: left;
-            padding: 20px;
-            font-weight: 300;
-        }
-
-        tfoot tr {
-            background: none;
-        }
-
-        tfoot td {
-            padding: 10px 2px;
-            font-size: 0.8em;
-            font-style: italic;
-            color: #8a97a0;
-        }
   </style>
 
 </head>
@@ -88,9 +44,9 @@
 
   <div  ng-controller="View1Ctrl" style="top: 200px">
     <div class="menu" id="div_SearchContainer">
-    <h1 align="absolute" style="text-align: center; color: #1ab188">Search for clothes!</h1>
-    <input type="text" id="txt_clothes" placeholder="Enter the type of clothes" style="margin-left: 100px"/>
-    <button id="btn_getReview" ng-click="getClothes()">Get Clothes</button>
+      <h1 align="absolute" style="text-align: center; color: #1ab1FF">Search for clothes!</h1>
+      <input type="text" id="txt_clothes" placeholder="Enter the type of clothes" style="margin-left: 100px"/>
+      <button id="btn_getReview" ng-click="getClothes()">Get Clothes</button>
     </div>
     <div id="div_VenueList">
       {{venue}}
